@@ -43,6 +43,18 @@ Original.nes must be the "(U) (PRG0) [!]" version of the ROM.
 
 To skip the verification, pass the option --NoVerify to build.ps1.
 
+### For macOS
+Install Powershell. If you already have .NET SDK, use `dotnet tool install --global PowerShell`  
+You can then use build_macos.ps1 to build instead
+
+Then for ca65 and ld65, clone cc65 and make it.
+```
+git clone https://github.com/cc65/cc65.git
+cd cc65
+make
+```
+Then copy the ca65 and ld65 from the resulting bin folder into the ext folder as described above
+
 
 Contact
 -------
